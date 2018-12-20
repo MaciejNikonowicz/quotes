@@ -1,0 +1,5 @@
+<h2><%= @quote.title %></h2>
+<p><%= @quote.body %></p>
+<hr>
+<%= link_to "Edit", edit_quote_path(@quote), :class=>'btn btn-dark' %>
+<%= link_to "Delete", quote_path(@quote), method: :delete, data: {confirm: 'Are you sure?'}, :class=>'btn btn-danger' %>
