@@ -1,0 +1,8 @@
+<!-- partial for comments section -->
+<h4>Comments</h4>
+<% @quote.comments.each do |comment| %>
+    <div class="card card-body bg-light mb-3">
+        <p><strong><%= comment.username %></strong>: <%= comment.body %><%= link_to '[X]', [comment.quote, comment], method: :delete, data: {confirm: 'Are you sure?'} %></p>
+        
+    </div>
+<% end %>
