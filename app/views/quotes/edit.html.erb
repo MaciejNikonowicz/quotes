@@ -1,7 +1,6 @@
-<h1>Add quote</h1>
-<!-- form for adding new quotation -->
-<%= form_for :quote, url: quotes_path do |f| %>
-    <!-- check if errors and displays message -->
+<h1>Edit quote</h1>
+<!-- form for editing selected quotation -->
+<%= form_for :quote, url: quote_path(@quote), method: :patch do |f| %>
     <% if @quote.errors.any? %>
         <% @quote.errors.full_messages.each do |msg| %>
             <div class="alert alert-danger"><%= msg %></div>

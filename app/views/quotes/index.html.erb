@@ -1,1 +1,11 @@
-<h1>Quotes</h1>
+<!-- loop that lists all the quotes on the main page -->
+<h1 class="text-center mb-5">Quotes:</h1>
+<% @quotes.each do |quote| %>
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+            <h3 class="card-title"><%= quote.title %></h3>
+            <p class="card-text"><%= quote.body %></p>
+            <%= link_to "Read More", quote_path(quote), :class=> 'btn btn-dark' %>
+        </div>
+    </div>
+<% end %>
