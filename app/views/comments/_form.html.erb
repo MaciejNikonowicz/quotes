@@ -1,0 +1,15 @@
+<!-- partial for adding a comment -->
+<h4>Add Comment</h4>
+<%= form_for([@quote, @quote.comments.build]) do |f| %>
+    <p>
+        <%= f.label :username %><br>
+        <%= f.text_field(:username, {:class=>'form-control'}) %>
+    </p>
+    <p>
+        <%= f.label :body %><br>
+        <%= f.text_field(:body, {:class=>'form-control'}) %>
+    </p>
+    <p>
+        <%= f.submit(:class=>'btn btn-primary') %>
+    </p>
+<% end %>
