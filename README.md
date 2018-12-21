@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple app for adding, editing and commenting quotations.
 
-Things you may want to cover:
+The app uses 'Quote' word as 'Citation' is reserved in Rails.
 
-* Ruby version
+In the right corner of navbar you will find a button to add quotes. 
 
-* System dependencies
+All the quotes are listed on index page and you can check detailed info where you can add comment, edit or delete quote.
 
-* Configuration
+I was thinking about adding some simple http auth with: http_basic_authenticate_with , however resigned from the idea so that full testing is possible.
 
-* Database creation
+There is Master branch for deployment on heroku, develop for writing code and Comments for adding comment functionality.
 
-* Database initialization
+You can find the app under the address:  https://ciubiapp.herokuapp.com/  (don't mind the name, everything was taken.. )
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
